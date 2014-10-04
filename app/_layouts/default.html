@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css({app,.tmp}) /css/main.css -->
+        <link rel="stylesheet" href="/css/app.css">
+        <!-- endbuild -->
+
+    </head>
+    <body>
+
+        <div class="site row">
+          <div class="header columns">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h3>If you open the inspector, you'll see the global styles are coming through multiple times - even though the 'include exports' command should prevent this.</h3>
+
+          {{ content }}
+
+          <div class="footer">
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
